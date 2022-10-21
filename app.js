@@ -131,7 +131,7 @@ app.post("/", (req, res) => {
                     ImageURL: characterInfo["imageUrl"]
                 });
             } catch (error) {
-                res.send("Error");
+                res.send("Error algo a fallado");
             }
         });
     });
