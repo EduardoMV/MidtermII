@@ -10,13 +10,71 @@
 
 html, body{
     /* background-image: url('https://i.gifer.com/6ROf.gif') !important;  */
-    background-image: url('https://c.tenor.com/usEpypleqHYAAAAC/got-game.gif') !important;
+    background-image: url('../images/fondo.jpg')  !important;
     background-size: cover;
+    background-position: center;
+    
+
 
     height: 100vh;
     padding:0;
     margin:0;
     overflow: hidden;
+}
+
+.content img{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    left:50px;
+    top: 20px;
+}
+
+.content ul{
+    position: relative;
+    width:200px;
+    left:50px;
+    top: 30px;
+}
+
+.decFrame{
+    position: relative;
+    left:550px;
+    top:-480px;
+    width:420px;
+    height: 580px;
+
+}
+
+.myBtn{
+    background-color: transparent !important;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.5);
+    width:400px;
+    height:500px;
+    position: relative;
+    top: 50px; 
+}
+
+#btns{
+    position:relative;
+    top:-500px; 
+    left:-60px;
+}
+.npBtn{
+    width: 200px;
+    height: 70px;
+    margin-left:55px ;
+}
+
+.btn{
+    width: auto;
+}
+
+.content{
+    align-items: center;
 }
   
 .navbar-art{
@@ -35,5 +93,5 @@ color: rgb(251, 255, 248);
 }
 
 li {
-    color: azure;
+    color: rgb(27, 37, 37);
 }

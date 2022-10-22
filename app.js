@@ -134,7 +134,7 @@ app.post("/", (req, res) => {
                     ImageURL: characterInfo["imageUrl"]
                 });
             } catch (error) {
-                res.send("Error algo ha fallado, favor de contactar al desarrollador.");
+                res.send("El personaje que buscas no se encuentra en la base de datos o no lo buscaste por FIRST NAME. Favor de intentar nuevamente.");
             }
         });
     });

@@ -39,41 +39,46 @@
       </div>
     </nav>
   </header>
-
-  <div class="row mt-4">
-  </div>
-  <img src="<%= ImageURL %> ">
-  <ul>
-    <li>
-      Id:
-      <%= ID %>
-        </td>
-    <li>
-      Firts Name:
-      <%= FirstName %>
-        </td>
-    <li>
-      Last Name:
-      <%= LastName %>
-        </td>
-    <li>
-      Title:
-      <%= Title %>
-        </td>
-    <li>
-      Family:
-      <%= Family %>
-        </td>
-  </ul>
+  
+    <div class="container">
+      <div class="content">
+        <img src="<%= ImageURL %> " class="imagenes">
+        <ul>
+          <li>
+            Id:
+            <%= ID %>
+              </td>
+          <li>
+            Firts Name:
+            <%= FirstName %>
+              </td>
+          <li>
+            Last Name:
+            <%= LastName %>
+              </td>
+          <li>
+            Title:
+            <%= Title %>
+              </td>
+          <li>
+            Family:
+            <%= Family %>
+              </td>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img class="decFrame" src="images/infoframe.png">
+    </div>
   <div class="row pb-4">
     <div class="col text-right">
       <form action="/previous" method="POST">
-        <button class="btn bg-dark myBtn" type="submit">Previous</button>
+        <button class="btn myBtn npBtn" id="btns" type="submit"><img class="npBtn" src="images/previous_button.png"></button>
       </form>
     </div>
     <div class="col text-left">
       <form action="/next" method="POST">
-        <button class="btn bg-dark myBtn" type="submit">Next</button>
+        <button class="btn myBtn npBtn" id="btns" type="submit"><img class="npBtn" src="images/next_button.png"></button>
       </form>
     </div>
   </div>
