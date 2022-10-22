@@ -41,6 +41,19 @@
   </header>
   
     <div class="container">
+      <img class="decFrame" src="images/infoframe.png">
+      <div class="row pb-4">
+        <div class="col text-right">
+          <form action="/previous" method="POST">
+            <button class="btn myBtn npBtn" id="btns" type="submit"><img class="pBtn" src="images/previous_button.png"></button>
+          </form>
+        </div>
+        <div class="col text-left">
+          <form action="/next" method="POST">
+            <button class="btn myBtn npBtn" id="btns" type="submit"><img class="nBtn" src="images/next_button.png"></button>
+          </form>
+        </div>
+      </div> 
       <div class="content">
         <img src="<%= ImageURL %> " class="imagenes">
         <ul>
@@ -67,10 +80,8 @@
         </ul>
       </div>
     </div>
-    <div>
-      <img class="decFrame" src="images/infoframe.png">
-    </div>
-  <div class="row pb-4">
+   
+  <!-- <div class="row pb-4">
     <div class="col text-right">
       <form action="/previous" method="POST">
         <button class="btn myBtn npBtn" id="btns" type="submit"><img class="npBtn" src="images/previous_button.png"></button>
@@ -82,7 +93,7 @@
       </form>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
