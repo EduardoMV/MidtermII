@@ -134,7 +134,7 @@ app.post("/", (req, res) => {
                     ImageURL: characterInfo["imageUrl"]
                 });
             } catch (error) {
-                res.send("Error algo a fallado");
+                res.send("Error algo ha fallado, favor de contactar al desarrollador.");
             }
         });
     });
