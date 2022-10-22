@@ -39,8 +39,6 @@ app.get("/",(req, res) =>{
 });
 
 app.post("/next",(req, res)=>{
-
-    sound.play("GOT.mp3");
     if(actualId==52){
         actualId=0;
     }else{
