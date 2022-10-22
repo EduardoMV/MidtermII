@@ -10,13 +10,7 @@ app.set('views', __dirname);
 
 actualId = 0;
 
-const sound = require("sound-play");
-volume = 0.5;
-
-
-
 app.get("/",(req, res) =>{
-    sound.play("GOT.mp3");
 
     var url = "https://thronesapi.com/api/v2/Characters/" + actualId;
     https.get(url, (response) =>{
@@ -45,6 +39,8 @@ app.get("/",(req, res) =>{
 });
 
 app.post("/next",(req, res)=>{
+
+    sound.play("GOT.mp3");
     if(actualId==52){
         actualId=0;
     }else{
