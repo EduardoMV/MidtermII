@@ -106,6 +106,40 @@ app.post("/previous",(req, res)=>{
         });
 });
 
+app.post("/", (req, res) => {
+    GOT = []
+    const url = "https://thronesapi.com/api/v2/Characters/";
+    https.get(url, (response) => {
+        response.on("data", (data) => {
+            GOT.push(data);
+        });
+        response.on("end", () => {
+            try {
+                const data = Buffer.concat(GOT);
+                const infoGOT = JSON.parse(data);
+                let characterInfo = null;
+                for (var i = 0; i < infoGOT.length; i++) {
+                    if (req.body.gotCharacter.toLowerCase() == infoGOT[i].firstName.toLowerCase()) {
+                        characterInfo = infoGOT[i];
+                        actualId = i;
+                        break;
+                    }
+                }
+                res.render("public/html/index.html", {
+                    ID: characterInfo["id"],
+                    LastName: characterInfo["lastName"],
+                    FirstName: characterInfo["firstName"],
+                    Title: characterInfo["title"],
+                    Family: characterInfo["family"],
+                    ImageURL: characterInfo["imageUrl"]
+                });
+            } catch (error) {
+                res.send("Error algo a fallado");
+            }
+        });
+    });
+});
+
 app.listen(3000, (err) => {
     console.log("Listening on port 3000");
 });
