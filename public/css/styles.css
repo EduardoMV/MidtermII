@@ -1,0 +1,39 @@
+/* FONTS
+  -------------------------------------------------- */
+
+  @import url('http://fonts.cdnfonts.com/css/lovelyn');
+
+  @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+/* GLOBAL STYLES
+  -------------------------------------------------- */
+
+html, body{
+    /* background-image: url('https://i.gifer.com/6ROf.gif') !important;  */
+    background-image: url('https://c.tenor.com/usEpypleqHYAAAAC/got-game.gif') !important;
+    background-size: cover;
+
+    height: 100vh;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+  
+.navbar-art{
+font-family: 'Lovelyn', sans-serif;  
+font-size: large;                       
+font-weight: bold;                    
+background-color: #202326 !important;
+}
+  
+.navbar-art a{
+color: rgb(251, 255, 248);
+}
+
+.navbar-toggler-icon{
+    color: azure;
+}
+
+li {
+    color: azure;
+}
