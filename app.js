@@ -140,12 +140,8 @@ app.post("/", (req, res) => {
     });
 });
 
-let port = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
-if (port == null || port == "") {
-
-  port = 5000;
-
-};
-
-app.listen(port);
+app.listen(PORT, () => {
+  console.log("Listening on port " + PORT);
+});
